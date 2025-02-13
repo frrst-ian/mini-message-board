@@ -1,8 +1,15 @@
 const express = require("express");
-const { route } = require("./indexRouter");
 const router = express.Router();
+const {messages} = require('./indexRouter')
 
-router.get('/new' , (req,res) => {
-    res.send("new bro");
+router.get('/' , (req,res) => {
+    res.render("form" , {title: "New Message"});
 })
 
+router.post('/', (req, res) => {
+    const { user, text } = req.body;
+    messages.push({ text, user, added: new Date() });
+    res.redirect('/');
+  });
+
+module.exports = router;
