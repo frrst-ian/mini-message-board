@@ -15,7 +15,17 @@ const messages = [
 ]
 
 router.get('/', (req, res) => {
-    res.render("index" , {title: "Mini Message Board", messages : messages });
+    res.render("index", { title: "Mini Message Board", messages: messages });
 })
 
-module.exports = {router , messages};
+router.get('/message/:id', (req, res) => {
+    const messageId = parseInt(req.params.id);
+    if (messageId >= 0 && messageId < messages.length) {
+        const message = messages[messageId];
+        res.render("message", { message });
+    } else {
+        res.status(404).send("Message not found");
+    }
+});
+
+module.exports = { router, messages };

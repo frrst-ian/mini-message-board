@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Details</title>
+  </head>
+  <body>
+    <h1>Message Details</h1>
+    <div class="message">
+      <h2>From: <%= message.user %></h2>
+      <p><%= message.text %></p>
+      <p><em>Posted on: <%= message.added %></em></p>
+    </div>
+    <a href="/">Back to messages</a>
+  </body>
+</html>
