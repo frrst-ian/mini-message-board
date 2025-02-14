@@ -3,19 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
     <title><%= title %></title>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <ul>
-      <% messages.forEach((message, index) => { %>
-      <li>
-        <strong><%= message.user %> </strong>: <%= message.text %>
-        <br />
-        <em><%= message.added %></em>
-        <a href="message/<%= index %>">Open</a>
-      </li>
-      <% }) %>
-    </ul>
+    <div class="main-container">
+      <div class="title">
+        <h1><%= title %></h1>
+        <a href="/new" class="new-message-btn">New Message</a>
+      </div>
+      <div class="content-wrapper">
+        <ul>
+          <% messages.forEach((message, index) => { %>
+          <li>
+            <strong><%= message.user %> </strong>: <%= message.text %>
+            <br />
+            <em><%= message.added %></em>
+            <a href="message/<%= index %>">Open</a>
+          </li>
+          <% }) %>
+        </ul>
+      </div>
+    </div>
+    <footer>
+      <div class="footer">
+        <a href="https://github.com/frrst-ian">
+          <img src="/github-142-svgrepo-com.svg" alt="github profile link" />
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

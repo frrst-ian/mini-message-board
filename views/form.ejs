@@ -3,19 +3,26 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
     <title><%= title %></title>
   </head>
   <body>
-    <h1><%= title %></h1>
-    <form method="POST" action="/new">
-      <label for="user">User:</label>
-      <input type="text" name="user" id="user" required />
-      <br />
-      <label for="message">Message:</label>
-      <textarea name="text" id="text" required></textarea>
-      <br />
-      <button type="submit">Submit</button>
-    </form>
-    <a href="/">Back to messages</a>
+    <div class="main-container">
+      <div class="title-message">
+        <h1><%= title %></h1>
+      </div>
+      <div class="form-wrapper">
+        <form method="POST" action="/new">
+          <label for="user">User:</label>
+          <input type="text" name="user" id="user" required />
+          <br />
+          <label for="message">Message:</label>
+          <textarea name="text" id="text" required></textarea>
+          <br />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <a href="/">Back to messages</a>
+    </div>
   </body>
 </html>

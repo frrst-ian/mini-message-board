@@ -4,8 +4,11 @@ const app = express();
 const path = require("node:path");
 const {router: indexRouter} = require('./routes/indexRouter');
 const newRouter = require('./routes/newRouter')
+const assetsPath = path.join(__dirname, "public");
 
 app.use(express.urlencoded({extended:true}));
+app.use(express.static(assetsPath));
+
 
 app.get('/health', (req, res) => {
     res.status(200).send('OK');
