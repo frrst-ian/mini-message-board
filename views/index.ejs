@@ -18,8 +18,13 @@
           <li>
             <strong><%= message.user %> </strong>: <%= message.text %>
             <br />
-            <em><%= message.added %></em>
-            <a href="message/<%= index %>">Open</a>
+            <em>
+              PHILIPPINES: <%= new Intl.DateTimeFormat('en-PH', { dateStyle: 'medium',
+              timeStyle: 'short', timeZone: 'Asia/Manila' }).format(new
+              Date(message.added)) %>
+              <br />
+            </em>
+            <a  class="open-link" href="message/<%= index %>">Open</a>
           </li>
           <% }) %>
         </ul>
@@ -28,7 +33,7 @@
     <footer>
       <div class="footer">
         <a href="https://github.com/frrst-ian">
-          <img src="/github-142-svgrepo-com.svg" alt="github profile link" />
+          <img src="/github.svg" alt="github profile link" />
         </a>
       </div>
     </footer>
