@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
+    <link rel="icon" href="/message-programming-svgrepo-com.svg" />
     <title><%= title %></title>
   </head>
   <body>
@@ -19,12 +20,12 @@
             <strong><%= message.user %> </strong>: <%= message.text %>
             <br />
             <em>
-              PHILIPPINES: <%= new Intl.DateTimeFormat('en-PH', { dateStyle: 'medium',
-              timeStyle: 'short', timeZone: 'Asia/Manila' }).format(new
-              Date(message.added)) %>
+              PHILIPPINES: <%= new Intl.DateTimeFormat('en-PH', { dateStyle:
+              'medium', timeStyle: 'short', timeZone: 'Asia/Manila'
+              }).format(new Date(message.added)) %>
               <br />
             </em>
-            <a  class="open-link" href="message/<%= index %>">Open</a>
+            <a class="open-link" href="message/<%= index %>">Open</a>
           </li>
           <% }) %>
         </ul>

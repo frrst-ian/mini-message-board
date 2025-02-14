@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/styles.css" />
     <title>Message Details</title>
   </head>
   <body>
@@ -12,7 +12,14 @@
       <div class="message">
         <h2>From: <%= message.user %></h2>
         <p><%= message.text %></p>
-        <p><em>Posted on: <%= message.added %></em></p>
+        <p>
+          <em>
+            PHILIPPINES: <%= new Intl.DateTimeFormat('en-PH', { dateStyle:
+            'medium', timeStyle: 'short', timeZone: 'Asia/Manila' }).format(new
+            Date(message.added)) %>
+            <br />
+          </em>
+        </p>
       </div>
       <a class="back-link" href="/">&#x25c0; Back to messages</a>
     </div>
