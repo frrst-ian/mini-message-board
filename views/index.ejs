@@ -15,17 +15,17 @@
       </div>
       <div class="content-wrapper">
         <ul>
-          <% messages.forEach((message, index) => { %>
+          <% messages.forEach((message) => { %>
           <li>
-            <strong><%= message.user %> </strong>: <%= message.text %>
+            <strong><%= message.username %> </strong>: <%= message.message %>
             <br />
             <em>
               PHILIPPINES: <%= new Intl.DateTimeFormat('en-PH', { dateStyle:
               'medium', timeStyle: 'short', timeZone: 'Asia/Manila'
-              }).format(new Date(message.added)) %>
+              }).format(new Date(message.posted_at)) %>
               <br />
             </em>
-            <a class="open-link" href="message/<%= index %>">Open</a>
+            <a class="open-link" href="message/<%= message.id %>">Open</a>
           </li>
           <% }) %>
         </ul>

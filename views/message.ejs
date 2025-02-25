@@ -10,13 +10,13 @@
     <div class="main-container">
       <h1>Message Details</h1>
       <div class="message">
-        <h2>From: <%= message.user %></h2>
-        <p><%= message.text %></p>
+        <h2>From: <%= message.username %></h2>
+        <p><%= message.message %></p>
         <p>
           <em>
             PHILIPPINES: <%= new Intl.DateTimeFormat('en-PH', { dateStyle:
             'medium', timeStyle: 'short', timeZone: 'Asia/Manila' }).format(new
-            Date(message.added)) %>
+            Date(message.posted_at)) %>
             <br />
           </em>
         </p>
