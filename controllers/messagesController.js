@@ -30,6 +30,7 @@ const createMessageHandler = async (req, res) => {
         await insertMessage(user, text);
         res.redirect("/");
     } catch (error) {
+        console.log("hi")
         console.error("Error creating message: ", error);
         res.status(500).send("Internal server error");
     }
