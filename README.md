@@ -19,7 +19,7 @@ Click here: [https://mini-message-board-og6b.onrender.com/](https://mini-message
 ## Design
 
 <div align='center'>
-<img src='721shots_so.png' alt='Screenshot of desktop design'>
+<img src='/public/721shots_so.png' alt='Screenshot of desktop design'>
 </div>
 
 ## Technologies Used
