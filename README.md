@@ -25,6 +25,7 @@ Click here: [https://mini-message-board-og6b.onrender.com/](https://mini-message
 ## Technologies Used
 
 - Node JS
+- Express JS
 - EJS
 
 ## Thoughts and Observations
