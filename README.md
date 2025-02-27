@@ -2,8 +2,10 @@
 
 1. [Description](#description)
 1. [Demo](#demo)
+1. [Design](#design)
 1. [Technologies Used](#technologies-used)
 1. [Thoughts and Observations](#thoughts-and-observations)
+1. [Limitations](#limitations)
 1. [Installation](#installation)
 
 ## Description
@@ -12,7 +14,13 @@ A mini message board built with Node.js that allows users to post and view messa
 
 ## Demo
 
-Click here: [https://nosy-dolli-turtl3-817c1caa.koyeb.app/](https://nosy-dolli-turtl3-817c1caa.koyeb.app/)
+Click here: [https://mini-message-board-og6b.onrender.com/](https://mini-message-board-og6b.onrender.com/)
+
+## Design
+
+<div align='center'>
+<img src='721shots_so.png' alt='Screenshot of desktop design'>
+</div>
 
 ## Technologies Used
 
@@ -21,7 +29,11 @@ Click here: [https://nosy-dolli-turtl3-817c1caa.koyeb.app/](https://nosy-dolli-t
 
 ## Thoughts and Observations
 
-The process of creating this project familiarized me with the concept behind MVC pattern
+The process of creating this project familiarized me with the concept behind MVC pattern and improved my knowledge about express JS.
+
+## Limitations
+
+I recently added a postgres SQL db on render and it will only last for one month, until March 27,2025.
 
 ## Installation
 
