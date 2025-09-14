@@ -5,7 +5,6 @@
 1. [Design](#design)
 1. [Technologies Used](#technologies-used)
 1. [Thoughts and Observations](#thoughts-and-observations)
-1. [Limitations](#limitations)
 1. [Installation](#installation)
 
 ## Description
@@ -31,10 +30,6 @@ Click here: [https://mini-message-board-og6b.onrender.com/](https://mini-message
 ## Thoughts and Observations
 
 The process of creating this project familiarized me with the concept behind MVC pattern and improved my knowledge about express JS.
-
-## Limitations
-
-I recently added a postgres SQL db on render and it will only last for one month, until March 27,2025.
 
 ## Installation
 
